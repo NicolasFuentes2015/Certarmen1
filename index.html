@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>certamen1</title>
+  </head>
+  <body>
+    
+    <header>
+      <i class="fas fa-adjust"></i>
+      <header class="bg-primary bg-gradient text-warning text-center container-fluid">
+        <div class="row"> 
+          <div class="col-12 col-md-6 col-lg-3"> 
+            <img src = "img/gorro.png" class="img-fluid" alt="logo">
+  
+          </div>
+          <div class="col-12 col-md-6 col-lg-9 pt-4 "> 
+            <h1>administración de menús del restaurant</h1>
+  
+          </div>
+        </div>
+      </header>
+    </header>
+
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card">
+            <div class="card-header bg-danger text-light text-center">
+              <span>Registrar Menu</span>
+            </div>
+            <div class="card-body">
+              
+              <div class="mb-3">
+
+                <label class="form-label" for="nombre-txt">Nombre</label>
+                <input class="form-control" type="text" id="nombre-txt">
+
+              </div>
+              <div class="mb-3">
+                <label for="tipo-select" class="form-label">Horario</label>
+
+                <select  id="tipo-select" class="form-select">
+                  <option value="Desayuno">Desayuno</option>
+                  <option value="Almuerzo">Almuerzo</option>
+                  <option value="Once">Once</option>
+                  <option value="Cena">Cena</option>
+                </select>
+
+              </div>
+              <div class="mb-3">
+
+                <label class="form-label" for="valor-txt">Valor</label>
+                <input class="form-control" type="text" id="valor-txt">
+
+              </div>
+              <div class="mb-3">
+
+                <label class ="form-fabel"
+                for="descripcion-txt">Descripción(opcional)</label>
+                <textarea id="descripcion-txt" ></textarea>
+
+
+              </div>
+     
+
+              
+
+            </div>
+            <div class="card-footer row">
+              <div class="col-6">
+                <button type="button" class="btn btn-success"
+                id="registrar-btn">Registrar</button>
+              </div>
+              
+
+              
+
+
+            </div>
+
+            
+
+
+          </div>
+
+        </div>
+        <div class="cold col-md col-lg ">
+          <div class="card">
+            <div class="card-header bg-danger text-light text-center">
+              <span>Menus</span>
+            </div>
+            <div class="card-body">
+             
+              <table class="table table-hover table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Nro</th>
+                    <th>Nombre</th>
+                    <th>Horario</th>
+                    <th>Valor</th>
+                    <th>Descripción</th>
+                    <th>Oferta</th>
+                  </tr>
+
+                </thead>
+                <tbody id="tabla-tbody">
+
+                </tbody>
+              </table>
+
+            </div>
+
+
+
+
+        </div>
+        
+      </div>
+    
+    </body>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="vendor/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/index.js"></script>
+
+  </body>
+</html>
